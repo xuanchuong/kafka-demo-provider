@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+      bindings:
+        activityEventOutputChannel:
+          destination: activity-tracking
+          contentType: application/json
