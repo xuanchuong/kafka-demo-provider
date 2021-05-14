@@ -8,7 +8,6 @@ import xuanchuongdp.kafka.demo.provider.configuration.MessageProducerConfigurati
 @SpringBootApplication
 @Import({MessageProducerConfiguration.class})
 public class ProviderBootstrapApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(ProviderBootstrapApplication.class, args);
     }

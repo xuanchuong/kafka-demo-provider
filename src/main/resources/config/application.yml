@@ -4,7 +4,13 @@ spring:
       kafka:
         binder:
           brokers: localhost:9092
+          replication-factor: 1
       bindings:
         activityEventOutputChannel:
           destination: activity-tracking
           contentType: application/json
+server:
+  servlet:
+    context-path: /kafka-provider
+
+

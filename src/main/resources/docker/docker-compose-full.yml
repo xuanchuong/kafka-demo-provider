@@ -1,0 +1,10 @@
+version: '2'
+services:
+  zookeeper:
+    extends:
+      file: zookeeper.yml
+      service: zookeeper
+  kafka:
+    extends:
+      file: kafka.yml
+      service: kafka
